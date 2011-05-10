@@ -99,8 +99,16 @@ public class ActionBar extends RelativeLayout implements OnClickListener {
         // TODO: Add possibility to add an IntentAction as well.
         mLogoView.setImageResource(resId);
         mLogoView.setVisibility(View.VISIBLE);
-        mHomeLayout.setVisibility(View.GONE);
+		mHomeLayout.setVisibility(View.GONE);
     }
+
+	public void showHomeLogo() {
+		mHomeLayout.setVisibility(View.VISIBLE);
+	}
+
+	public void hideHomeLogo() {
+		mHomeLayout.setVisibility(View.GONE);
+	}
 
     /* Emulating Honeycomb, setdisplayHomeAsUpEnabled takes a boolean
      * and toggles whether the "home" view should have a little triangle
